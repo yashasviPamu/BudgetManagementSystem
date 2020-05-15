@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Expenses">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Expense Name"
+        android:layout_margin="20dp"
+        android:id="@+id/expname"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expname"
+        android:layout_marginLeft="20dp"
+        android:hint="Expense Amount"
+        android:inputType="number"
+        android:id="@+id/expamount"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/expamount"
+        android:layout_marginLeft="160dp"
+        android:text="Add"
+        android:id="@+id/add"/>
+
+</RelativeLayout>
